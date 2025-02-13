@@ -13,7 +13,7 @@ persona_controlador = PersonaController(conexion)
 if __name__ == "__main__":
     while True:
         print("\nMenú CRUD")
-        print("1. Listar clientes")
+        print("1. Mostrar clientes")
         print("2. Agregar cliente")
         print("3. Actualizar cliente")
         print("4. Eliminar cliente")
