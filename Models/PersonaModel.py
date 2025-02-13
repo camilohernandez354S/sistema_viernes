@@ -12,10 +12,10 @@ class PersonaModel:
             cursor.execute(query, valores)
             self.conexion.conexion.commit()
             cursor.close()
-            return True  # ✅ Inserción exitosa
+            return True  
         except Exception as e:
-            print(f"❌ Error al agregar persona: {e}")
-            return False  # ❌ Falló la inserción
+            print(f" Error al agregar persona:")
+            return False  
 
     def obtener_personas(self):
         try:
@@ -25,5 +25,5 @@ class PersonaModel:
             cursor.close()
             return personas
         except Exception as e:
-            print(f"❌ Error al obtener personas: {e}")
+            print(f" Error al obtener personas: ")
             return []
