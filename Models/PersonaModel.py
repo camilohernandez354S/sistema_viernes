@@ -1,3 +1,5 @@
+import re
+
 class PersonaModel:
     def __init__(self, conexion):
         self.conexion = conexion
@@ -14,8 +16,9 @@ class PersonaModel:
             cursor.close()
             return True  
         except Exception as e:
-            print(f" Error al agregar persona:")
+            print(f"\033[31mError al agregar persona: {e}")  # Ahora mostrará el error exacto
             return False  
+
 
     def obtener_personas(self):
         try:
@@ -24,6 +27,5 @@ class PersonaModel:
             personas = cursor.fetchall()
             cursor.close()
             return personas
-        except Exception as e:
-            print(f" Error al obtener personas: ")
+        except Exception:
             return []
