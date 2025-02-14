@@ -18,4 +18,4 @@ class PersonaView:
         print(mensaje)
 
     def mostrar_error(self, error):
-        print(f" Error: {error}")
+        print(f" Error: {error}") #mensaje de error

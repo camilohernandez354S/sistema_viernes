@@ -65,7 +65,7 @@ class ClienteModel:
             
         except Exception as e:
             print(f"Error al actualizar cliente: {e}")
-            return False  # Indica que hubo un error
+            return False  
 
 
     def eliminar_cliente(self, id):

@@ -27,7 +27,7 @@ class PersonaController:
                 print("\033[33mError: El segundo apellido solo puede contener letras.")
                 return  
 
-            # Luego se ingresan el documento y el teléfono
+            
             documento = input("Ingrese el documento: ").strip()
             if not documento.isdigit():
                 print("\033[33mError: El documento debe contener solo números.")

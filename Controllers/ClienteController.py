@@ -23,7 +23,7 @@ class ClienteController:
             print("El cliente con el ID ingresado no existe.")
             return
         
-        # Permitir que el usuario ingrese solo lo que quiere actualizar
+        # Permitir que el usuario ingrese solo lo que quiere actualizar.
         if nuevo_id is None:
             nuevo_id = input("Ingrese el nuevo ID del cliente (o presione Enter para mantener el actual): ").strip() or None
             nuevo_id = int(nuevo_id) if nuevo_id else None

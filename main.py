@@ -11,8 +11,8 @@ def main():
     persona_controlador = PersonaController(conexion)
     persona_view = PersonaView()
 
-    while True:
-        print("\nMenú CRUD")
+    while True: #menu principal
+        print("\nMenú Ventas")
         print("1. Mostrar clientes")
         print("2. Agregar cliente")
         print("3. Actualizar cliente")
