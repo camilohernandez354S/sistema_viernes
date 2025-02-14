@@ -43,7 +43,6 @@ class PersonaController:
                 print("\033[33mError: El género debe ser 'M' o 'F'.")
                 return  
 
-            print("\033[32m Todas las validaciones pasaron. Procediendo a agregar persona.")
             self.modelo.agregar_persona(pri_nombre, seg_nombre, pri_apellido, seg_apellido, documento, telefono, "", "", "", "", genero)
             print("\033[32m Persona agregada correctamente.")
 
